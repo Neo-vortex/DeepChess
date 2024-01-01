@@ -56,6 +56,58 @@ layers.append(tf.keras.layers.Dense(1, activation='linear', name=f"linear-{len(l
 # Create the Sequential model
 model = tf.keras.Sequential(layers)
 ```
+
+
+### Input Layer
+- **Purpose**: Initialize the input layer with the shape of input data. as the FEN encoder, encodes data to 808 binary elemets
+- **Code**: 
+  ```python
+  tf.keras.layers.InputLayer(input_shape=input_shape)
+  ```
+
+### Hidden Layers
+- **Design**: Iteratively construct hidden layers to process the input data.
+- **Components**:
+  - **Dense Layer**: 
+    - Fully connected layer.
+    - Code: 
+      ```python
+      tf.keras.layers.Dense(size, name=f"linear-{i}")
+      ```
+  - **Batch Normalization**:
+    - Normalizes the activations from the previous layer.
+    - Code: 
+      ```python
+      tf.keras.layers.BatchNormalization(name=f"batch_norm-{i}")
+      ```
+  - **ReLU Activation**:
+    - Adds non-linearity to the model.
+    - Code: 
+      ```python
+      tf.keras.layers.ReLU(name=f"relu-{i}")
+      ```
+  - **Dropout**:
+    - Prevents overfitting by randomly setting a fraction of the inputs to zero.
+    - Code: 
+      ```python
+      tf.keras.layers.Dropout(0.3, name=f"dropout-{i}")
+      ```
+
+### Output Layer
+- **Purpose**: Provide the final regression output.
+- **Code**:
+  ```python
+  tf.keras.layers.Dense(1, activation='linear', name=f"linear-{len(layer_sizes)}")
+  ```
+
+### Model Assembly
+- **Method**: Sequentially stacking the layers.
+- **Code**:
+  ```python
+  model = tf.keras.Sequential(layers)
+  ```
+
+
 ![Figure_1](https://github.com/Neo-vortex/DeepChess/assets/40230471/f1eb8d86-c68d-4d20-924e-ad15d4a8628a)
 
 ![Figure_2](https://github.com/Neo-vortex/DeepChess/assets/40230471/2027bf94-b090-4079-b04d-41c20a859622)
