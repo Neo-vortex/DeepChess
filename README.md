@@ -83,3 +83,15 @@ To successfully build and run this chess engine project, certain software and to
 
 * GCC or Other C Compiler: A C compiler is necessary for parts of the project that involve C code, such as fen-extractor . GCC is recommended, but any standard C compiler should suffice. GCC can be installed from the GCC official website or through your system's package manager.
 
+** More info about how to setup and use the actual code comes soon!
+
+## Show Me Some Games
+Ok!
+
+This is the first game I played with DeepChess I used alpha-beta searching but I set the depth to 1 to start! not so impresive.
+As expected, it did no go so well and the engine blundered a knight in the very early moves 
+
+[White : neo, Black : DeepChess, no time control]
+![game1](https://github.com/Neo-vortex/DeepChess/assets/40230471/446e1303-6c06-48c9-aedc-233e48dfe6b4)
+
+
