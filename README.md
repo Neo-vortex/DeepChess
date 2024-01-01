@@ -91,7 +91,20 @@ Ok!
 This is the first game I played with DeepChess I used alpha-beta searching but I set the depth to 1 to start! not so impresive.
 As expected, it did no go so well and the engine blundered a knight in the very early moves 
 
-[White : neo, Black : DeepChess, no time control]
+[White : neo, Black : DeepChess(depth=1), no time control]
 ![game1](https://github.com/Neo-vortex/DeepChess/assets/40230471/446e1303-6c06-48c9-aedc-233e48dfe6b4)
+
+
+Let's see how it performs with depth = 3
+
+[White : neo, Black : DeepChess(depth=3), no time control]
+![2](https://github.com/Neo-vortex/DeepChess/assets/40230471/ef29819c-4cbd-45d9-a8ce-4f2dbf806cb2)
+
+I did not play well at all in game 2, but I was impressed by how black can play and see the opportunities (forking and wining material)!
+
+## TODO :
+* More games comming soon
+* Provide the model publicly
+* Deep dive into how to train and work with the code
 
 
