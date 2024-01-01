@@ -27,12 +27,7 @@ The goal of this project was modest yet ambitious: to create a functional chess 
   - R-squared: 0.837447
 - **Correlation between True Score and Predicted Score:** 0.915121
 
-## Insights and Plots
-- Descriptive statistics and correlation matrices provided valuable insights into the model's performance.
-- The plots below illustrate various aspects of the results, offering a deeper understanding of the model's efficacy.
 
-
----
 
 # Model Architecture
 
