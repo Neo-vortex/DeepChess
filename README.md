@@ -147,7 +147,7 @@ Let's see how it performs with depth = 3
 [White : neo, Black : DeepChess(depth=3), no time control]
 ![2](https://github.com/Neo-vortex/DeepChess/assets/40230471/ef29819c-4cbd-45d9-a8ce-4f2dbf806cb2)
 
-I did not play well at all in game 2, but I was impressed by how black can play and see the opportunities (forking and wining material)!
+I did not play well at all in game 2, but I was impressed by how black can play and see the opportunities (forking, wining material , controlling semi-open files and counter attacks)!
 
 ## TODO :
 * More games comming soon
