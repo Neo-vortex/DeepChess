@@ -9,7 +9,7 @@ The goal of this project was modest yet ambitious: to create a functional chess 
 ## Methodology
 ### Data Collection and Preparation
 - **Source:** Utilized the Lichess database ([Lichess Database](https://database.lichess.org/)), which contains games played on Lichess since 2013.
-- **Dataset:** Selected the first five months of 2013, translating into about 350,000 games and 23 million non-unique FEN positions. evaluted with stockfish 16 at depth ** 8 **
+- **Dataset:** Selected the first five months of 2013, translating into about 750,000 games and 23 million non-unique FEN positions. evaluted with stockfish 16 at depth ** 8 **
 - **Tools:** Employed `pgn-extract` ([pgn-extract](https://github.com/MichaelB7/pgn-extract)) for processing the games and a Go library ([notnil/chess](https://github.com/notnil/chess)) for encoding FEN positions to binary.
 - **Implementation:** Developed a C# project for integrating with the Go library and storing the data in a SQLite database.
 
